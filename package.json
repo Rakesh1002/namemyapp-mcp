@@ -2,7 +2,7 @@
   "name": "@namemyapp/mcp",
   "version": "1.1.5",
   "mcpName": "io.github.Rakesh1002/namemyapp",
-  "description": "Model Context Protocol server for namemy.app \u2014 let AI agents check live domain availability and hand users a one-click buy URL. Stdio mirror; remote endpoints at https://mcp.namemy.app/mcp (OAuth) and https://mcp.namemy.app/direct (bearer). Public mode works with no API key; authed mode unlocks all 12 tools.",
+  "description": "Model Context Protocol server for namemy.app — let AI agents check live domain availability and hand users a one-click buy URL. Stdio mirror; remote endpoints at https://mcp.namemy.app/mcp (OAuth) and https://mcp.namemy.app/direct (bearer). Public mode works with no API key; authed mode unlocks all 12 tools.",
   "type": "module",
   "bin": {
     "namemyapp-mcp": "./dist/index.js"
