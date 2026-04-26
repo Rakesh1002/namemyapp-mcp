@@ -1,0 +1,47 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Rakesh1002/namemyapp",
+  "description": "Brandable business names with live domain availability + one-click buy URLs.",
+  "repository": {
+    "url": "https://github.com/Rakesh1002/namemyapp-mcp",
+    "source": "github"
+  },
+  "version": "1.1.5",
+  "websiteUrl": "https://namemy.app/agents",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@namemyapp/mcp",
+      "version": "1.1.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "NAMEMYAPP_API_KEY",
+          "description": "Optional. Get a free key at https://namemy.app/app/api-keys.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "NAMEMYAPP_AGENT_SOURCE",
+          "description": "Attribution tag (e.g. 'claude-desktop'). Default 'mcp'.",
+          "isRequired": false,
+          "format": "string",
+          "default": "mcp"
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.namemy.app/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.namemy.app/direct"
+    }
+  ]
+}

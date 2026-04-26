@@ -1,0 +1,47 @@
+{
+  "name": "@namemyapp/mcp",
+  "version": "1.1.5",
+  "mcpName": "io.github.Rakesh1002/namemyapp",
+  "description": "Model Context Protocol server for namemy.app \u2014 let AI agents check live domain availability and hand users a one-click buy URL. Stdio mirror; remote endpoints at https://mcp.namemy.app/mcp (OAuth) and https://mcp.namemy.app/direct (bearer). Public mode works with no API key; authed mode unlocks all 12 tools.",
+  "type": "module",
+  "bin": {
+    "namemyapp-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "domain",
+    "naming",
+    "ai-agent"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rakesh1002/namemyapp-mcp.git"
+  },
+  "homepage": "https://namemy.app/agents",
+  "bugs": {
+    "url": "https://github.com/Rakesh1002/namemyapp-mcp/issues"
+  }
+}
